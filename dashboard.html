@@ -662,11 +662,13 @@
       </div>
     </section>
 
-    <!-- <section class="center-bottom-footer-top">
+    <!-- bottom -->
+
+    <section class="center-bottom-footer-top">
 
       <nav id="nav">
         <a onclick="showSection('activity', this)">Activity</a>
-        <a onclick="showSection('profile', this)">Profile</a>
+        <a onclick="showSection('profil', this)">Profile</a>
         <a onclick="showSection('settings', this)">Settings</a>
         <div class="underline" id="underline"></div>
       </nav>
@@ -907,11 +909,141 @@
             </div>
           </div>
         </div>
+        </div>
+
+        <div id="profil" class="section">
+
+            <div class="name1">
+                <h5>Full Name</h5>
+                <h6>Johnathan Deo</h6>
+            </div>
+            <div class="name2">
+                <h5>Mobile</h5>
+                <h6>(123) 456 7890</h6>
+            </div>
+            <div class="name3">
+                <h5>Email</h5>
+                <h6>johnathan@admin.com</h6>
+            </div>
+            <div class="name4">
+                <h5>Location</h5>
+                <h6>London</h6>
+            </div>
+
+            <div class="lorem-text-profil">
+                <p>
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae,br justo.
+                    Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras 
+                    dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                    Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+
+                    <br><br>
+
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries
+
+                    <br><br>
+
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                    Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                    including versions of Lorem Ipsum.
+                
+                    <br><br>
+
+                    <h6>
+                        Skill set
+                    </h6>
+                </p>
+            </div>
+
+            <div class="skills">
+                <div class="skill">
+                  <span>WordPress</span>
+                  <div class="progress">
+                    <div class="progress-bar wp" style="width: 80%"></div>
+                  </div>
+                  <span class="percent">80%</span>
+                </div>
+                <div class="skill">
+                  <span>React</span>
+                  <div class="progress">
+                    <div class="progress-bar react" style="width: 50%"></div>
+                  </div>
+                  <span class="percent">50%</span>
+                </div>
+                <div class="skill">
+                  <span>VueJS</span>
+                  <div class="progress">
+                    <div class="progress-bar vue" style="width: 45%"></div>
+                  </div>
+                  <span class="percent">45%</span>
+                </div>
+                <div class="skill">
+                  <span>NextJS</span>
+                  <div class="progress">
+                    <div class="progress-bar next" style="width: 15%"></div>
+                  </div>
+                  <span class="percent">15%</span>
+                </div>
+              </div>
+
+        </div>
   
         <div id="settings" class="section">
-  
+
+            <form class="w-50 mx-auto">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <!-- Qo‘shimcha custom-input klassi qo‘shildi -->
+                  <input type="text" class="form-control custom-input" id="name">
+                </div>
+            
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control custom-input" id="email">
+                </div>
+            
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control custom-input" id="password">
+                </div>
+            
+                <div class="mb-3">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" class="form-control custom-input" id="address">
+                </div>
+            
+                <button type="submit" class="btn btn-primary btn-lg submit">Submit</button>
+              </form>
+
         </div>
-    </section> -->
+    </section>
+    </section>
+
+    <footer>
+        <div class="left">
+            <h4>
+            Distributed by 
+            <span>
+                <a href="https://themewagon.com/">ThemeWagon.com</a>
+            </span>
+        </h4>  
+        </div>
+
+        <div class="right">
+            <h4>
+                © 2025 All rights reserved by
+                <span>
+                    <a href="https://www.wrappixel.com/">Wrappixel.com</a>
+                </span>
+            </h4>
+        </div>
+      
+    </footer>
+    
   </div>
   <script>
     function showSection(id, element) {
