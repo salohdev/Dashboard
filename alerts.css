@@ -200,278 +200,248 @@
     margin-left: 12px;
     padding-top: 10px;
   }
-  
-  /* button */
-  
-  .color-buttons button {
-    margin-top: 30px;
+
+  /* alert */
+
+  .alert {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 170px;
+    background: #fff;
+    height: 350px;
+    width: 1100px;
   }
-  
-  .color-buttons .blue {
-    background: #1e88e5;
-    width: 105px;
-    height: 36px;
-    border: none;
+
+  .red {
+    background: #ffe2d9;
+    border: 1px solid #ffe2d9;
+    color: #fb926f;
+    width: 100%;
+    height: 50px;
     border-radius: 5px;
-    color: #fff;
-    font-weight: 500;
-    margin-left: 12px;
+    margin-top: 20px;
   }
-  
-  .color-buttons .blue:hover {
-    box-shadow: 0px 2px 5px #666;
-    transition: .3s;
+
+  .red span {
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 50px;
   }
-  
-  /*  */
-  
-  .color-buttons .red {
-    background: #fa896b;
-    width: 105px;
-    height: 36px;
-    border: none;
+
+  .yellow {
+    background: #fef5e5;
+    border: 1px solid #fef5e5;
+    color: #ffd3a9;
+    width: 100%;
+    height: 50px;
     border-radius: 5px;
-    color: #fff;
-    font-weight: 500;
+    margin-top: 20px;
   }
-  
-  .color-buttons .red:hover {
-    box-shadow: 0px 2px 5px #666;
-    transition: .3s;
+
+  .yellow span {
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 50px;
   }
-  
-  /*  */
-  
-  .color-buttons .aqua {
-    background: #21c1d6;
-    width: 105px;
-    height: 36px;
-    border: none;
+
+  .bin {
+    background: #dedaf9;
+    border: 1px solid #dedaf9;
+    color: #7e6cef;
+    width: 100%;
+    height: 50px;
     border-radius: 5px;
-    color: #fff;
-    font-weight: 500;
+    margin-top: 20px;
   }
-  
-  .color-buttons .aqua:hover {
-    box-shadow: 0px 2px 5px #666;
-    transition: .3s;
+
+  .bin span {
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 50px;
   }
-  
-  /*  */
-  
-  .color-buttons .green {
-    background: #13deb9;
-    width: 105px;
-    height: 36px;
-    border: none;
+
+  .green {
+    background: #e6fffa;
+    border: 1px solid #e6fffa;
+    color: #28e1bf;
+    width: 100%;
+    height: 50px;
     border-radius: 5px;
-    color: #fff;
-    font-weight: 500;
+    margin-top: 20px;
   }
-  
-  .color-buttons .green:hover {
-    box-shadow: 0px 2px 5px #666;
-    transition: .3s;
+
+  .green span {
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 50px;
   }
-  
-  /*  */
-  
-  .color-buttons .yellow {
-    background: #ffb22b;
-    width: 105px;
-    height: 36px;
-    border: none;
+
+  .alert2 {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 550px;
+    background: #fff;
+    height: 350px;
+    width: 1100px;
     border-radius: 5px;
-    color: #fff;
-    font-weight: 500;
-    margin-left: 12px;
+  }
+
+  .alert2 h5 {
     margin-top: 10px;
+    margin-left: 20px;
   }
-  
-  .color-buttons .yellow:hover {
-    box-shadow: 0px 2px 5px #666;
-    transition: .3s;
-  }
-  
-  .text-buttons {
-    position: absolute;
-    margin-top: 160px;
-    margin-left: 1100px;
-    background: #fff;
-    width: 470px;
-    height: 155px;
-    border-radius: 10px;
-  }
-  
-  .text-buttons h5 {
-    color: #555;
-    margin-top: 20px;
-    margin-left: 12px;
-  }
-  
-  .text-buttons button {
-    background: none;
-    border: none;
+
+  .red2 {
+    border: 2px solid #ffe2d9;
+    color: #fb926f;
+    width: 1066px;
+    height: 50px;
+    border-radius: 5px;
     margin-top: 20px;
     margin-left: 20px;
   }
-  
-  .Outline-Buttons {
-    margin-top: 400px;
+
+  .red2 span {
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 50px;
+  }
+
+  .yellow2 {
+    border: 2px solid #fef5e5;
+    color: #ffd3a9;
+    width: 1066px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .yellow2 span {
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 50px;
+  }
+
+  .bin2 {
+    border: 2px solid #dedaf9;
+    color: #7e6cef;
+    width: 1066px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .bin2 span {
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 50px;
+  }
+
+  .green2 {
+    border: 2px solid #e6fffa;
+    color: #28e1bf;
+    width: 1066px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .green2 span {
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 50px;
+  }
+
+  .alert3 {
+    position: absolute;
     margin-left: 500px;
-    position: absolute;
+    margin-top: 950px;
     background: #fff;
-    width: 460px;
-    border-radius: 10px;
-    height: 186px;
+    height: 430px;
+    width: 1100px;
+    border-radius: 5px;
   }
-  
-  .Outline-Buttons h5 {
-    margin-top: 20px;
-    margin-left: 12px;
-    color: #555;
+
+  .alert3 h5 {
+    margin-top: 10px;
+    margin-left: 20px;
   }
-  
-  .Outline-Buttons button {
-    background: none;
-    margin-top: 20px;
-  }
-  
-  .Size-Buttons {
-    margin-top: 400px;
-    margin-left: 1100px;
-    position: absolute;
-    background: #fff;
-    width: 460px;
-    border-radius: 10px;
-    height: 186px;
-  }
-  
-  .Size-Buttons h5 {
-    margin-top: 20px;
-    margin-left: 12px;
-    color: #555;
-  }
-  
-  .Size-Buttons button {
+
+  .red3 {
+    background: #ffe2d9;
+    border: 1px solid #ffe2d9;
+    color: #fb926f;
+    width: 1066px;
+    height: 70px;
+    border-radius: 5px;
     margin-top: 20px;
     margin-left: 20px;
   }
-  
-  .Size-Buttons button:hover {
-    box-shadow: 0px 2px 5px #666;
-    transition: .3s;
-  }
-  
-  .Icon-Buttons {
-    margin-top: 650px;
-    margin-left: 500px;
+
+  .red3 span {
     position: absolute;
-    background: #fff;
-    width: 460px;
-    border-radius: 10px;
-    height: 156px;
+    padding-top: 10px;
+    padding-left: 50px;
   }
-  
-  .Icon-Buttons h5 {
-    margin-top: 20px;
-    margin-left: 12px;
-    color: #555;
-  }
-  
-  .Icon-Buttons button {
-    margin-top: 20px;
-    margin-left: 20px;
-    background: none;
-    border: none;
-  }
-  
-  .Fab-Buttons {
-    margin-top: 650px;
-    margin-left: 1100px;
-    position: absolute;
-    background: #fff;
-    width: 460px;
-    border-radius: 10px;
-    height: 186px;
-  }
-  
-  .Fab-Buttons h5 {
-    margin-top: 20px;
-    margin-left: 12px;
-    color: #555;
-  }
-  
-  .Fab-Buttons button {
+
+  .yellow3 {
+    background: #fef5e5;
+    border: 1px solid #fef5e5;
+    color: #ffd3a9;
+    width: 1066px;
+    height: 70px;
+    border-radius: 5px;
     margin-top: 20px;
     margin-left: 20px;
   }
-  
-  /* Hammasiga umumiy button style */
-  .Group-Buttons button {
-    padding: 10px 20px;
-    font-size: 14px;
-    margin-left: -20px;
-    margin-top: -100px;
-    font-weight: 600;
-    border: none;
-    border-radius: 6px;
-  }
-  .Group-Buttons {
-    margin-top: 870px;
-    margin-left: 500px;
+
+  .yellow3 span {
     position: absolute;
-    background: #fff;
-    width: 450px;
-    border-radius: 10px;
-    height: 140px;
+    padding-top: 10px;
+    padding-left: 50px;
   }
-  
-  .Group-Buttons h5 {
-    margin-left: 12px;
-    color: #555;
-  }
-  
-  
-  /* Group-Buttons (Filled style) */
-  .Group-Buttons button {
-    background-color: #1e90ff;
-    color: white;
-    border-color: #1e90ff;
-    margin-top: 50px;
-  }
-  
-  /* Group-Outline-Buttons (Outline style) */
-  .Group-Outline-Buttons button {
-    background-color: white;
-    color: #1e90ff;
-    border: 1px solid #1e88e5;
-    width: 60px;
-    height: 35px;
-    margin-left: -10px;
+
+  .bin3 {
+    background: #dedaf9;
+    border: 1px solid #dedaf9;
+    color: #7e6cef;
+    width: 1066px;
+    height: 70px;
+    border-radius: 5px;
     margin-top: 20px;
+    margin-left: 20px;
   }
-  
-  .Group-Outline-Buttons {
-    margin-top: 870px;
-    margin-left: 1100px;
+
+  .bin3 span {
     position: absolute;
-    background: #fff;
-    width: 450px;
-    border-radius: 10px;
-    height: 140px;
+    padding-top: 10px;
+    padding-left: 50px;
   }
-  
-  .Group-Outline-Buttons h5 {
-    margin-top: 30px;
-    margin-left: 12px;
-    color: #555;
+
+  .green3 {
+    background: #e6fffa;
+    border: 1px solid #e6fffa;
+    color: #28e1bf;
+    width: 1066px;
+    height: 70px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
   }
-  
+
+  .green3 span {
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 50px;
+  }
+
   footer {
     position: absolute;
-    margin-left: 310px;
-    margin-top: 970px
+    margin-left: 290px;
+    margin-top: 1370px;
   }
     .right {
     float: right;

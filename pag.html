@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagination (1 … 10 holati)</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .pagination {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .pagination button,
+    .pagination span {
+      border: none;
+      background: none;
+      font-size: 16px;
+      color: #0d47a1;
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+
+    .pagination .active {
+      background-color: #e0e0e0;
+      border-radius: 50%;
+      color: #000;
+      cursor: default;
+      font-weight: bold;
+    }
+
+    .pagination .disabled {
+      color: #ccc;
+      cursor: default;
+    }
+
+    .pagination .dots {
+      color: #666;
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pagination" id="pagination"></div>
+
+  <script>
+    const totalPages = 10;
+    let currentPage = 1;
+
+    function renderPagination(page) {
+      currentPage = page;
+      const container = document.getElementById("pagination");
+      container.innerHTML = "";
+
+      // ←
+      const prev = document.createElement("button");
+      prev.innerHTML = "&#8249;";
+      if (page === 1) {
+        prev.classList.add("disabled");
+      } else {
+        prev.onclick = () => renderPagination(page - 1);
+      }
+      container.appendChild(prev);
+
+      // page buttons
+      if (page === totalPages) {
+        // only 1 ... 10
+        const b1 = document.createElement("button");
+        b1.textContent = "1";
+        b1.onclick = () => renderPagination(1);
+        container.appendChild(b1);
+
+        const dots = document.createElement("span");
+        dots.textContent = "...";
+        dots.className = "dots";
+        container.appendChild(dots);
+
+        const blast = document.createElement("button");
+        blast.textContent = totalPages;
+        blast.classList.add("active");
+        container.appendChild(blast);
+      } else {
+        for (let i = 1; i <= totalPages; i++) {
+          if (
+            i === 1 ||
+            i === totalPages ||
+            (i >= page && i <= page + 3)
+          ) {
+            const btn = document.createElement("button");
+            btn.textContent = i;
+            if (i === page) btn.classList.add("active");
+            else btn.onclick = () => renderPagination(i);
+            container.appendChild(btn);
+          } else if (i === page + 4) {
+            const dots = document.createElement("span");
+            dots.textContent = "...";
+            dots.className = "dots";
+            container.appendChild(dots);
+          }
+        }
+      }
+
+      // →
+      const next = document.createElement("button");
+      next.innerHTML = "&#8250;";
+      if (page === totalPages) {
+        next.classList.add("disabled");
+      } else {
+        next.onclick = () => renderPagination(page + 1);
+      }
+      container.appendChild(next);
+    }
+
+    // dastlabki chizish
+    renderPagination(currentPage);
+  </script>
+
+</body>
+</html>
